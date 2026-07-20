@@ -1,0 +1,36 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.adyton.com/resources/security
+note: >-
+  Authentication mechanisms as documented on Adyton's Security resource page for the
+  Adyton Operations Kit (AOK) / Atlas platform. Adyton publishes no public developer
+  API or OpenAPI, so this profile is derived from documented product auth support
+  rather than a machine-readable securitySchemes block.
+summary:
+  types: [smartcard, webauthn, oauth2, mutualTLS, sso]
+  mfa: true
+  device_authentication: true
+schemes:
+- name: cac
+  type: smartcard
+  description: 'Common Access Card (CAC) authentication'
+- name: piv
+  type: smartcard
+  description: 'Personal Identity Verification (PIV) card authentication'
+- name: webauthn
+  type: webauthn
+  description: 'WebAuthn / FIDO2 phishing-resistant authenticators'
+- name: oauth2
+  type: oauth2
+  description: 'OAuth2 supported for integrations to legacy defense infrastructure and cloud APIs'
+- name: client-certificate
+  type: mutualTLS
+  description: 'Client-certificate (mutual TLS) authentication for integrations'
+- name: sso
+  type: sso
+  description: 'Flexible enterprise SSO integration'
+controls:
+  rbac: true
+  multi_factor: true
+  device_authentication: true
+  remote_wipe: true
