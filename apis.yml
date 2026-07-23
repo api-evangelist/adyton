@@ -1,8 +1,29 @@
 aid: adyton
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/adyton.png
 name: Adyton
-description: 'Adyton is a company surfaced as a portfolio company of initialized-capital, kindred-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: enterprise-saas. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: 'Adyton (Adyton PBC) is a veteran-founded defense technology company building
+  secure, mobile-first, zero-trust software for the U.S. military and defense enterprises.
+  Founded in 2019 by Special Forces veterans James Boyd and JJ Wilson, Adyton delivers
+  the Adyton Operations Kit (AOK) — a mobile productivity suite whose modules include
+  Mustr (real-time personnel accountability and muster), Log-E (distributed logistics
+  and equipment/hand-receipt tracking), and Skeds (planning and scheduling) — plus the
+  Atlas edge platform for disconnected, denied, disrupted, and intermittent (DDIL)
+  environments. The platform is engineered for IL5/IL6, FIPS 140-2 Level 3 encryption,
+  FedRAMP+ and NIST 800-53r5 controls, runs on AWS GovCloud, and supports CAC/PIV,
+  WebAuthn/FIDO2, and OAuth2 authentication. Added to the API Evangelist network as a
+  portfolio company of Initialized Capital and Kindred Ventures.'
 url: https://raw.githubusercontent.com/api-evangelist/adyton/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -17,6 +38,13 @@ modified: '2026-07-17'
 tags:
 - Company
 - Enterprise Saas
+- Defense
+- Zero Trust
+- Mobile
+- Security
+- Personnel Accountability
+- Logistics
+- GovTech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,4 +53,25 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://adyton.io/
+  url: https://www.adyton.com/
+- type: Blog
+  url: https://www.adyton.com/blog
+- type: Support
+  url: https://help.adyton.com/en/
+- type: Login
+  url: https://web.app.adytonpbc.com/
+- type: TermsOfService
+  url: https://app.termly.io/policy-viewer/policy.html?policyUUID=d6e2cf66-4cb9-4378-a1f3-08ac3f5334a8
+- type: Compliance
+  url: https://www.adyton.com/resources/security
+- type: Conformance
+  url: conformance/adyton-conformance.yml
+- type: Authentication
+  url: authentication/adyton-authentication.yml
+- type: DomainSecurity
+  url: security/adyton-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

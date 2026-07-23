@@ -1,0 +1,47 @@
+generated: '2026-07-17'
+method: searched
+source: https://www.adyton.com/resources/security
+note: >-
+  Compliance and security posture as published on Adyton's Security resource page.
+  Adyton operates a defense platform (AWS GovCloud) rather than a public developer
+  API; these are the vendor's documented certification/control-framework claims.
+standards:
+- id: dod-il5
+  conforms: true
+  evidence: 'Platform tested for DoD Impact Level 5 (IL5) compliance'
+- id: dod-il6
+  conforms: true
+  evidence: 'Engineered and built for DoD Impact Level 6 (IL6); NIST-validated cryptographic modules up to IL6'
+- id: fips-140-2
+  conforms: true
+  evidence: 'FIPS 140-2 Level 3 encryption for data at rest and in transit; NIST-validated cryptographic modules'
+- id: fedramp-plus
+  conforms: true
+  evidence: 'Designed for DoD FedRAMP+ MMX (Control Overlay)'
+- id: nist-800-53r5
+  conforms: true
+  evidence: 'Purpose-built features addressing NIST SP 800-53 Rev. 5 federal security controls'
+- id: nist-800-63r3
+  conforms: true
+  evidence: 'Compliance with NIST SP 800-63-3 digital identity guidelines'
+- id: nist-800-124
+  conforms: true
+  evidence: 'Compliance with NIST SP 800-124 mobile device security guidelines'
+- id: dod-cc-srg
+  conforms: true
+  evidence: 'Compliance with the DoD Cloud Computing Security Requirements Guide (CC SRG)'
+- id: cnssi-1253
+  conforms: true
+  evidence: 'Data protection aligned to CNSSI 1253 and CNSSI 1253F, including PII/PHI'
+- id: fido2-webauthn
+  conforms: true
+  evidence: 'Supports WebAuthn/FIDO2 authenticators alongside CAC and PIV'
+- id: oauth2
+  conforms: true
+  evidence: 'OAuth2 supported for integrations (per platform/AOK documentation)'
+- id: zero-trust
+  conforms: true
+  evidence: 'Zero-trust architecture with continuous validation to the atomic data element level; awarded a Certificate to Field'
+- id: capco-data-tagging
+  conforms: true
+  evidence: 'CAPCO data tagging for CUI and Classified materials; attribute-level security controls'
